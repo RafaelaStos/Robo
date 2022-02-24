@@ -7,9 +7,9 @@ namespace Tupiniquim.Consoleapp
         static void Main(string[] args)
         {
             
-                int localizacaoX, localizacaoY, localizacaoX2, localizacaoY2;
+            int localizacaoX, localizacaoY, localizacaoX2, localizacaoY2;
             char sentido;
-                char sentido2;
+            char sentido2;
             string comando, comando2;
                 
 
@@ -23,7 +23,7 @@ namespace Tupiniquim.Consoleapp
                 Console.WriteLine("\n----------------------------------------------");
                 Console.WriteLine("\nE para a ESQUERDA; \nD para DIREITA;\nM para anda para frente.");
                 Console.WriteLine("\nOs comandos são de forma sequencial.\nEx:MMMDMMMEM");
-            /*
+           
                 Console.WriteLine("\n----------------------------------------------");
                 Console.WriteLine("\n   Digite as intrução para o Primeiro Robô    ");
                 Console.WriteLine("\n----------------------------------------------");
@@ -68,23 +68,23 @@ namespace Tupiniquim.Consoleapp
                     if (instrucao[posicao] == 'E')
                     {
                         if (sentido == 'N') sentido = 'O';
-                        if (sentido == 'S') sentido = 'L';
-                        if (sentido == 'L') sentido = 'N';
-                        if (sentido == 'O') sentido = 'S';
+                        else if (sentido == 'S') sentido = 'L';
+                        else if (sentido == 'L') sentido = 'N';
+                        else if (sentido == 'O') sentido = 'S';
                     }
                     if (instrucao[posicao] == 'D')
                     {
-                        if (sentido == 'N') sentido = 'L';
-                        if (sentido == 'S') sentido = 'O';
-                        if (sentido == 'L') sentido = 'S';
-                        if (sentido == 'O') sentido = 'N';
+                       if (sentido == 'N') sentido = 'L';
+                       else if (sentido == 'S') sentido = 'O';
+                       else if (sentido == 'L') sentido = 'S';
+                       else if (sentido == 'O') sentido = 'N';
                     }
 
 
                 }
                 Console.WriteLine("Posição final do primeiro do robo: " + localizacaoX + "," + localizacaoY + "," + sentido);
                  Console.ReadKey();
-            */
+            
                 Console.Clear();
                 Console.WriteLine("\n   Digite as intrução para o Segundo Robô    ");
                 Console.WriteLine("\n----------------------------------------------");
@@ -129,16 +129,16 @@ namespace Tupiniquim.Consoleapp
                     if (instrucao2[posicao] == 'E')
                     {
                         if (sentido2 == 'N') sentido2 = 'O';
-                        if (sentido2 == 'S') sentido2 = 'L';
-                        if (sentido2 == 'L') sentido2 = 'N';
-                        if (sentido2 == 'O') sentido2 = 'S';
+                        else if (sentido2 == 'S') sentido2 = 'L';
+                        else if (sentido2 == 'L') sentido2 = 'N';
+                        else if (sentido2 == 'O') sentido2 = 'S';
                     }
                     if (instrucao2[posicao] == 'D')
                     {
                         if (sentido2 == 'N') sentido2 = 'L';
-                        if (sentido2 == 'S') sentido2 = 'O';
-                        if (sentido2 == 'L') sentido2 = 'S';
-                        if (sentido2 == 'O') sentido2 = 'N';
+                        else if (sentido2 == 'S') sentido2 = 'O';
+                        else if (sentido2 == 'L') sentido2 = 'S';
+                        else if (sentido2 == 'O') sentido2 = 'N';
                     }
 
 
